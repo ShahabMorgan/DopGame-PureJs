@@ -60,7 +60,6 @@ function startTimer()
     randomNumberText = document.querySelector('#js-p-2');
     timer = setTimeout (()=> {
         randomNumberText.innerText=``;
-        console.log('check')
         permistionToStart=true;
         displayInStart = false;
         localStorage.setItem('permistionToStart',JSON.stringify(permistionToStart));
@@ -71,7 +70,6 @@ function startTimer()
 
     if(permistionToStart===true)
     {
-        console.log('check2')
         location.reload();
     }
 
@@ -88,7 +86,6 @@ function changeColor (value){
         buttonElment.disabled = false;
         localStorage.setItem('visiblity',JSON.stringify(visiblity));
         buttonElment.classList.remove('is-lose','is-win');
-        console.log('check1')
         if(displayInStart===false){
             return gamePoint(); 
         }
@@ -117,7 +114,6 @@ function changeColor (value){
             buttonElment.classList.add('is-lose');  
             buttonElment.disabled = true;
             localStorage.setItem('visiblity',JSON.stringify(visiblity));
-            console.log('check3')
             if(displayInStart===false){
             return gamePoint(); }
             
@@ -127,7 +123,6 @@ function changeColor (value){
             visiblity[`number${value}`]=false;
             buttonElment.classList.add('is-win'); 
             localStorage.setItem('visiblity',JSON.stringify(visiblity));     
-            console.log('check4')      
             if(displayInStart===false){
                 return gamePoint(); }
     }
