@@ -1,0 +1,60 @@
+body{
+    font-family: arial;
+}
+button{
+    cursor: pointer;
+    margin: 10px ;
+}
+.test-button{
+    transition: 0.9s;
+    font-weight: bold;  
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color:black;
+    background-color: rgb(230,230, 230);
+    padding: 5px 15px 5px 15px;
+}.games-button{
+    transition: 0.9s;
+    font-weight: bold;  
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color:black;
+    background-color: rgb(230,230, 230);
+    padding: 5px 15px 5px 15px;
+}
+.is-win{
+    color:black;
+    background-color: rgb(0, 255, 4);
+}
+.is-lose{
+    color:black;
+    background-color:rgb(245, 55, 0);
+}
+
+
+.point-text{
+   margin: 10px ;
+   font-weight: bold;
+   background-color: black;
+   color: white;
+   border-radius: 10px;
+   padding: 10px; 
+   width: 20vh;
+}
+.games-button:nth-child(1n+2){
+    background-color: rgb(63, 63, 255);
+    color: white;
+    
+}
+
+.games-button:nth-child(1n+3){
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.games-button:nth-child(1n+2):hover{
+    transition: 0.5s;
+    padding: 10.5px;
+}
