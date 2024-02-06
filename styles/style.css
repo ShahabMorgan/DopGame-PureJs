@@ -1,60 +1,83 @@
-body{
-    font-family: arial;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: arial;
+    height: calc(100vh - 60px);
 }
-button{
-    cursor: pointer;
-    margin: 10px ;
+:root :hover {
+  transition: 0.5s;
+  padding: 20px;
+  cursor: pointer;
 }
-.test-button{
-    transition: 0.9s;
-    font-weight: bold;  
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    color:black;
-    background-color: rgb(230,230, 230);
-    padding: 5px 15px 5px 15px;
-}.games-button{
-    transition: 0.9s;
-    font-weight: bold;  
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    color:black;
-    background-color: rgb(230,230, 230);
-    padding: 5px 15px 5px 15px;
+button {
+  margin: 10px;
 }
-.is-win{
-    color:black;
-    background-color: rgb(0, 255, 4);
+.test-button {
+  transition: 0.9s;
+  font-weight: bold;
+  font-size: 2.2vh;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  padding: 5px 15px 5px 15px;
 }
-.is-lose{
-    color:black;
-    background-color:rgb(245, 55, 0);
+.games-button {
+  transition: 0.9s;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  padding: 5px 15px 5px 15px;
 }
-
-
-.point-text{
-   margin: 10px ;
-   font-weight: bold;
-   background-color: black;
-   color: white;
-   border-radius: 10px;
-   padding: 10px; 
-   width: 20vh;
+.is-win {
+  color: black;
+  background-color: rgb(0, 255, 4);
 }
-.games-button:nth-child(1n+2){
-    background-color: rgb(63, 63, 255);
-    color: white;
-    
+.is-lose {
+  color: black;
+  background-color: rgb(245, 55, 0);
 }
 
-.games-button:nth-child(1n+3){
-    background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
+.point-text {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.games-button:nth-child(1n + 2) {
+  background-color: rgb(63, 63, 255);
+  color: white;
 }
 
-.games-button:nth-child(1n+2):hover{
-    transition: 0.5s;
-    padding: 10.5px;
+.games-button:nth-child(1n + 3) {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.games-button:nth-child(1n + 2):hover {
+}
+
+.js-div-1 {
+  width: 100%;
+}
+.text-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dop-game-text {
+  transition: all 3s;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
