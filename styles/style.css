@@ -4,12 +4,15 @@ body {
   align-items: center;
   justify-content: center;
   font-family: arial;
-    height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
 }
 :root :hover {
   transition: 0.5s;
-  padding: 20px;
   cursor: pointer;
+}
+#js-div-1 > button:hover {
+  transition: 0.15s;
+  padding: 20px;
 }
 button {
   margin: 10px;
@@ -27,9 +30,10 @@ button {
 .games-button {
   transition: 0.9s;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.5vh;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 15px;
   color: black;
   background-color: rgb(230, 230, 230);
   padding: 5px 15px 5px 15px;
@@ -44,9 +48,14 @@ button {
 }
 
 .point-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   background-color: black;
   color: white;
+  font-size: 1.5vh;
+  padding: 10px;
   border-radius: 10px;
   padding: 10px;
 }
@@ -64,7 +73,8 @@ button {
 }
 
 .js-div-1 {
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .text-div {
   width: 100%;
@@ -75,9 +85,11 @@ button {
 }
 
 .dop-game-text {
-  transition: all 3s;
+  transition: all 0.15s;
   background-color: red;
   color: white;
+  font-size: 1.5vh;
+  padding: 10px;
   border-radius: 10px;
   padding: 10px;
 }
