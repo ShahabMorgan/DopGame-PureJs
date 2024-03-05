@@ -148,7 +148,7 @@ function CreateRandomNumber(value) {
   random = [];
 
   while (randomNumber.length <= value * 0.6) {
-    random = Math.floor(Math.random() * (value + 1) + 0);
+    random = Math.floor(Math.random() * (value - 1) + 1);
     if (!randomNumber.includes(random)) {
       randomNumber.push(random);
     }
